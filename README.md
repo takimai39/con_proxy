@@ -10,6 +10,7 @@ $ cc con_proxy.c -o con_proxy -lpthread
 
 ## Usage
 
+```
 $ con_proxy
 con_proxy: local-port remote-host remote-port  
 $  
@@ -24,6 +25,7 @@ Waiting for contact ...
 0000: ff fa 20 01  ff f0 ff fa  23 01 ff f0  ff fa 27 01  | .. .....#.....'.  
 0010: ff f0 ff fa  18 01 ff f0                            | ........  
 ... 略 ...  
+```
 　
 この例では、ローカルポート 10023 へ接続してきた通信を、192.168.1.23 の 23 番（telnetポート）に接続します。
 telnet localhost 10023 と、自ホストの 10023 に接続すると、192.168.1.23 の telnet へ接続されます。
