@@ -19,6 +19,9 @@ $
 　
 $ con_proxy 10023 192.168.1.23 23  
 Waiting for contact ...   
+
+この待ち状態で、別のターミナルから telnet localhost 10023 などで接続してみると通信は転送され同時に転送されているデータが hex dump されます。
+
                     ^^^^^ Send ^^^^^  
 0000: ff fd 18 ff  fd 20 ff fd  23 ff fd 27               | ..... ..#..'  
                     VVVVV Receive VVVVV  
